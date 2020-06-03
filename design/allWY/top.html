@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>榜单</title>
+	<style type="text/css">
+		body{
+			background: url(images/背景改.png);
+			background-size: 1920px,1080px;
+		}
+		p{
+			font-family: "微软雅黑";
+			font-size: 20px;
+		}
+		h1{
+			font-family: "宋体";
+			font-size: 20px;
+
+		}
+		a{
+			text-decoration: none;
+		}
+		#all{
+			width: 1000px;
+			height: 600px;
+			position: relative;
+			/*//border-radius: 20px;*/
+			border: 2px;
+			background-color: rgba(0,0,0,0.1);
+			margin: 50px auto;
+		}
+		.bd1{
+			position: relative;
+			height: 300px;
+			width: 150px;
+			border-color: black;
+			border: 0px solid #002;
+			border-radius: 3px;
+			left: 50px;
+			top: 80px;
+		}
+		.bd2{
+			position: absolute;
+			height: 130px;
+			width: 450px;
+			border:0px solid #002;
+			border-radius: 3px;
+			left: 154px;
+			top: 5px;
+		}
+		.bd3{
+			position: absolute;
+			height: 350px;
+			width: 600px;
+			left: 182px;
+			top: 200px;
+			border:1px solid#002;
+			background: white;
+		}
+		.bd4{
+			position: absolute;
+			height: 150px;
+			width: 150px;
+			left: -3px;
+			top: -4px;
+			border:0px solid#002;
+			background: white;
+		}
+		#bd1a{
+			position: relative;
+		}
+		img:hover{
+			/*background-color:red;*/
+			cursor: pointer;
+		}
+		img:visited{
+			
+		}
+		#qindex{
+			position: relative;
+			top: 5px;
+			font-size: 20px;
+		}
+		#qindex:hover{
+			cursor: pointer;
+			/*background-color: cyan;*/
+		}
+		#img2{
+			height: 28px;
+			width: 30px;
+		}
+		#tb{
+			position: relative;
+			left: 113px;
+			top: -44px;
+			height: 25px;
+			width: 150px;
+			border:0px solid#002;
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+		<div class="bd1" ="bd1">
+			<p style="position: relative;left: 6px;">榜单</p>
+			<a href="" id="bd1a" style="left: 12px;">热歌榜</a>
+			<a href="" id="bd1a" style="left: -40px;top: 31px;">新歌榜</a>
+			<a href="" id="bd1a" style="position:absolute;left: 12px;top: 110px;">飙升榜</a>
+			<a href="" id="bd1a" style="position:absolute;left: 12px;top: 140px;">热门影视榜</a>
+		</div>
+		<div class="bd2">
+			<div class="bd4">
+				<img src="images/火.png" style="position: absolute;left: 0px;top: 3px;height:150px;width: 150px;">
+			</div>
+			<!-- <p style="position: relative;font-size: 33px;top:5px;left: 15px;">热歌榜</p> -->
+			<p style="position: absolute;left: 155px;top: -5px;font-size: 24px;">热歌榜</p>
+			<p style="position: absolute;left: 156px;top: 38px;font-size: 16px;">播放</p>
+			<a href="music.html"><img src="images/播放.png" style="width: 20px;height: 20px;position: absolute;top: 55px;left: 190px;"></a>
+			<p style="position: absolute;font-size: 16px;left: 220px;top:37px;">添加</p>
+			<img src="images/添加.png" style="width: 20px;height: 20px;position: absolute;left: 252px;top: 54px;">
+			<p style="position: absolute;font-size: 16px;left: 275px;top:37px;">下载</p>
+			<img src="images/下载.png" style="height: 20px;width: 20px;position: absolute;left: 310px;top: 54px;">
+			<p style="position: absolute;font-size: 16px;left: 340px;top:37px;">分享</p>
+			<img src="images/分 享.png" style="position: absolute;left: 380px;top: 54px;height: 20px;width: 20px;">
+		</div>
+		<h1 style="position: absolute;left: 185px;top: 153px;">歌曲列表</h1>
+		<div class="bd3">
+			<ol>
+				<li id="qindex">
+					<p>哑巴-薛之谦</p>
+					<div id="tb">
+						<a href="music.html"><img id="img2" src="images/播放.png" alt="" style="position: relative;left: 1px;top:-2px;"></a>
+						<img id="img2"  style="position: relative;left: 1px;top:-2px; " src="images/下载.png" alt="">
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/分 享.png" alt="">
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/添加.png" alt="">
+					</div>
+					
+				</li>
+				<li id="qindex" style="top: -30px;">
+					whalesong-萨满乐队
+				</li>
+				<li id="qindex" style="top: -15px;">
+					revolution-Conny Berghall
+				</li>
+				<li id="qindex" style="top: 0px;">
+					wings~you are the hero-押尾光太郎
+				</li>
+				<li id="qindex" style="top: 15px;">
+					我一定会爱上你-谢春花
+				</li>
+				<li id="qindex" style="top: 30px;">
+					只不过是-花粥
+				</li>
+				<li id="qindex" style="top: 45px;">
+					无悔这一生-beyond
+				</li>
+				<li id="qindex" style="top: 60px;">
+					一生何求-谭咏麟
+				</li>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>

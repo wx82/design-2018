@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>登录~</title>
+<style type="text/css">
+	* {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+	body{background: url(images/背景1改.png);
+		background-size:cover;}
+		a{text-decoration: none;}
+		h1{
+		font-family:"微软雅黑";
+		color: red;
+	}
+	p{color: white;
+		background-color: lightblue;
+		width: 20em}
+		#log{background-color: rgba(0,0,0,0.1);
+			width: 450px;
+			height: 500px;
+			margin: 60px 940px 0px ;border: 1px; border-radius: 20px;}
+		#log span{color: orange;
+			font-size:40px;
+			font-family: "微软雅黑";
+			position: relative;
+			top: 20px;left: 30px;}
+		#name{width: 200px;height:30px;position: relative;top: 35px;left: 60px;}
+		#nicheng{font-size: 30px;color: purple;position: relative;left: 45px;top: 40px;font-family: "微软雅黑"}
+		#password{width: 200px;height:30px;position: relative;top: 35px;left: 60px;}
+		#mima{font-size: 30px;color: purple;position: relative;left: 45px;top: 40px;font-family: "微软雅黑"}
+		#logIn{background-color:orange;width: 150px;height: 40px;font-size: 20px;color: red;
+			position: relative;top: 45px;left: 10px;}
+		#have{font-size: 20px;font-family: "微软雅黑";position: relative;top: 65px;left: 130px;}
+		#ce{font-size: 20px;position: relative;top: 5px;left: 350px;}
+		#forget{font-size: 20px;position: relative;top: 5px;left: 350px;}
+		#choice1{position: relative;left: 50px;}
+		.bgImg{ height: 50px;width: 50px; position: relative;left: 150px;}
+</style>
+</head>
+<body>
+<h1>  你的月亮我的心</h1>
+<p>——————欢迎您的登录</p>
+<div id="log">
+	<form method="post" action="save.php">
+		<span>用户登录</span><br>		
+		<label id="nicheng" for="name">账号:</label>
+		<input type="text" name="name" id="name" placeholder="  请输入账号">
+		<div id="ce">
+			<a href="http://www.--.com">注册账号</a>
+		</div><br>
+		<label id="mima" for="password">密码:</label>
+		<input type="text" name="password" id="password" placeholder="  请输入密码">
+		<div id="forget">
+			<a href="http://www.**.com">忘记密码</a>
+		</div><br>
+		<div id="choice1">
+			<input type="radio" name="choice" id="choice" >
+			<label for="choice">下次自动登录</label>
+		</div><br>
+			<a href=""><img class="bgImg" src="images/qq.png"></a>&nbsp;&nbsp;&nbsp;
+			<a href=""><img class="bgImg" src="images/微信.png"></a>
+			<input type="submit" name="submitBtn" id="logIn" value="点击登录"><br>
+		<div id="have">
+			<a href="index.html" target="_blank" style="font-size: 25px; position: relative;right: 20px;">无法登陆，立即跳转</a>	
+		</div>
+	</form>
+</div>
+</body>
+</html>

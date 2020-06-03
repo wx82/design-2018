@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+		}
+		body{
+			background: url(images/背景改.png);
+			background-size: cover;
+		}
+		ul li{
+			width: 180px;
+			height: 105px;
+			background: rgba(0,0,0,0.7);
+			list-style: none;
+			float: left;
+			margin: 30px 5px;
+			position: relative;
+		}
+		ul li:before{
+				content: "";
+				width: 180px;
+				height: 105px;
+				background: rgba(0,0,0,.7);
+				position: absolute;
+				left: 0;
+				right: 0;
+				transform: rotate(60deg);
+		}
+		ul li:after{
+				content: "";
+				width: 180px;
+				height: 105px;
+				background: rgba(0,0,0,.7);
+				position: absolute;
+				left: 0;
+				right: 0;
+				transform: rotate(-60deg);
+		}
+		ul li:hover{
+				transition: gcale(1.5);
+		}
+		ul li:nth-child(6){
+			margin-left: 100px;
+		}
+		/*伪类*/
+		img{
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			left: 50px;
+			top: 12.5px;
+			z-index: 999;
+			transition: 0.5s all ease-in-out;
+		}
+		img:hover{
+			transform: rotate(360deg) scale(1.5);
+		}
+		#nav{
+			width: 980px;
+			height: 400px;
+			margin: 50px auto;
+		}
+		#leader{
+            height: 40px;
+            width: 100%;
+            background-color: #300;
+
+        }
+        #leader img{
+            position: absolute;
+            left: 90px;
+            height: 40px;
+            width: 50px;
+            transform: rotate(-20deg);
+        }
+        #span1{
+            position: relative;
+            left: 170px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+            font-family: "MicrosoftJhengHei"；
+        }
+        #span2{
+            position: relative;
+            left: 370px;
+            top: 9px;
+            font-size: 18px;
+            color: white;
+        }
+        #span3{
+            position: relative;
+            left: 520px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+        #span4{
+            position: relative;
+            left: 670px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+        #span5{
+            position: relative;
+            left: 820px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+        #span6{
+            position: relative;
+            left: 1120px;
+            top: 9px;
+            color: white; 
+            font-size: 14px;
+        }
+        #span7{
+            position: relative;
+            left: 1160px;
+            top: 9px;
+            color: white; 
+            font-size: 14px;
+        }
+        #span8{
+        	position: relative;
+            left: 960px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+		#leader span:hover{
+            background-color: #0c3; cursor: pointer;
+        }
+        #leader a{
+        	color: white;
+        }
+	</style>
+</head>
+<body>
+	<!-- <div id="leader">
+        <img src="images/摇滚手势.png" >
+        <span id="span1">你的月亮我的心</span>
+        <span id="span2"><a href="index.html">首页</a></span>
+        <span id="span3"><a href="singer.html">歌手</a></span>
+        <span id="span4"><a href="allsong.html">歌曲</a></span>
+        <span id="span5"><a href="top.html">榜单</a></span>
+        <span id="span8"><a href="demo.html">分类</a></span>
+        <a href="1.html"><span id="span6">登录</span></a>
+        <a href="register.html"><span id="span7">注册</span></a>
+    </div> -->
+	<div id="nav">
+		<ul>
+			<li class="oli">
+				<a href="sdasdasdas">
+					<img src="images/儿歌.png" alt="导航图" width="80" height="80">
+				</a>
+			</li>
+			<li class="oli">
+				<img src="images/小清新.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/儿歌.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/民族.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/小清新.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/摇滚.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/流行音乐.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/民族.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/流行音乐.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/摇滚.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/小清新.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/民族.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/流行音乐.png" alt="导航图" width="80" height="80">
+			</li>
+			<li class="oli">
+				<img src="images/摇滚.png" alt="导航图" width="80" height="80">
+			</li>
+		</ul>
+	</div>
+	
+</body>
+</html>

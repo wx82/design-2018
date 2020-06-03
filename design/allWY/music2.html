@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>青花瓷 - 周杰伦</title>
+	<link rel="stylesheet" href="css/music.css">
+	<style type="text/css">
+		body{
+			background-image: url(images/006.jpg);
+			background-size: cover;
+		}
+		.words{
+			position: relative;
+			font-family: "微软雅黑";
+			font-size: 20px;
+
+		}
+		.words:hover{
+			color: red;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<audio id="audio" src="music/周杰伦 - 青花瓷.mp3" preload>
+	 对不起，您的浏览器不支持HTML5音频播放。
+	 </audio>
+
+	 <div id="CDimage">
+	 <img src="images/周杰伦.png" style="height: 300px; width: 300px;" />
+	 </div>
+
+	 <div>
+	 <input id="volume" type="range" min="0" max="1" step="0.1"onchange="setVolume()"/>
+	 </div>
+
+	 <div>
+	 当前正在播放：<span id="title">青花瓷 - 周杰伦</span>
+	 <div/>
+
+	 <div>
+	 <button id="toggleBtn" onclick="toggleMusic()"><img src="images/play.png" width="50" height="50" />
+	 </button>
+	 </div>
+	 <div>
+	 	<span class="words">素胚勾勒出青花笔锋浓转淡</span><br>
+		<span class="words">瓶身描绘的牡丹一如你初妆</span><br>
+		<span class="words">冉冉檀香透过窗心事我了然</span><br>
+		<span class="words">宣纸上走笔至此搁一半</span><br>
+		<span class="words">釉色渲染仕女图韵味被私藏</span><br>
+		<span class="words">而你嫣然的一笑如含苞待放</span><br>
+		<span class="words">你的美一缕飘散</span><br>
+		<span class="words">去到我去不了的地方</span><br>
+		<span class="words">天青色等烟雨 而我在等你</span><br>
+		<span class="words">炊烟袅袅升起 隔江千万里</span><br>
+		<span class="words">在瓶底书刻隶仿前朝的飘逸</span><br>
+		<span class="words">就当我为遇见你伏笔</span><br>
+		<span class="words">天青色等烟雨 而我在等你</span><br>
+		<span class="words">月色被打捞起 晕开了结局</span><br>
+		<span class="words">如传世的青花瓷自顾自美丽</span><br>
+		<span class="words">你眼带笑意</span><br>
+
+		<span class="words">色白花青的锦鲤跃然于碗底</span><br>
+		<span class="words">临摹宋体落款时却惦记着你</span><br>
+		<span class="words">你隐藏在窑烧里千年的秘密</span><br>
+		<span class="words">极细腻犹如绣花针落地</span><br>
+		<span class="words">篱外芭蕉惹骤雨门环惹铜绿</span><br>
+		<span class="words">而我路过那江南小镇惹了你</span><br>
+		<span class="words">在泼墨山水画里</span><br>
+		<span class="words">你从墨色深处被隐去</span><br>
+		<span class="words">天青色等烟雨 而我在等你</span><br>
+		<span class="words">炊烟袅袅升起 隔江千万里</span><br>
+		<span class="words">在瓶底书刻隶仿前朝的飘逸</span><br>
+		<span class="words">就当我为遇见你伏笔</span><br>
+		<span class="words">天青色等烟雨 而我在等你</span><br>
+		<span class="words">月色被打捞起 晕开了结局</span><br>
+		<span class="words">如传世的青花瓷自顾自美丽你眼带笑意</span><br>
+	 </div>
+	 <script>
+	 var music = document.getElementById("audio");
+	 var volume = document.getElementById("volume");
+	 var toggleBtn = document.getElementById("toggleBtn");
+
+	 var title = document.getElementById("title");
+	 
+	 function toggleMusic(){
+	 	if (music.paused) {
+	 		music.play();
+	 		toggleBtn.innerHTML='<img src="images/pause.png" width="50" height="50"/>';
+	 	} else{
+	 		music.pause();
+	 		toggleBtn.innerHTML='<img src="images/play.png" width="50" height="50"/>';
+	 	}
+	 }
+
+	 function setVolume(){
+	 	music.volume = volme.value;
+	 }
+	 </script>
+	
+</html>

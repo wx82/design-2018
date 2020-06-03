@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>全部歌曲</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background: url(images/背景改.png);
+			background-size: cover;
+		}
+		#all{
+			width: 1000px;
+			height: 600px;
+			position: relative;
+			border:0px solid#002;
+			margin: 50px auto;
+		}
+		.as1{
+			width: 200px;
+			height: 450px;
+			border:0px solid#002;
+		}
+		.as2{
+			position: absolute;
+			left: 251px;
+			top: 99px;
+			width: 600px;
+			height: 500px;
+			border: 0px solid#001;
+		}
+		.as3{
+			position: absolute;
+			width: 120px;
+			border:0px solid#002;
+			height: 35px;
+			top: 64px;
+			left: 251px;
+		}
+		#a1z{
+			position:relative;
+			font-size: 20px;
+			left: 40px;
+		}
+		#a1z:hover{
+			cursor:pointer;
+			color: cyan;
+		}
+		#img1{
+			position: relative;
+			width: 35px;
+			height: 35px;
+		}
+		#img1:hover{
+			cursor: pointer;
+		}
+		#song{
+			position: relative;
+			font-size: 20px;
+			width: 200px;
+			height: 25px;
+		}
+		#tb{
+			position: relative;
+			left: 120px;
+			font-size: 20px;
+		}
+		.ts{
+			position:relative;
+			top: 20px;
+			left: 20px;
+		}
+		#s1{
+			position: relative;
+			top: 20px;
+		}
+		#s3{
+			position: relative;
+			top: -140px;
+		}
+		#s4{
+			position: relative;
+			top: -240px;
+		}
+		#s5{
+			position: relative;
+			top: -340px;
+		}
+		#s6{
+			position: relative;
+			top: -440px;
+		}
+		#s7{
+			position: relative;
+			top: -540px;
+		}
+		#s8{
+			position: relative;
+			top: -640px;
+		}
+		a{
+			text-decoration: none;
+		}
+		#s1:hover #i1{
+			opacity: 1;
+		}
+		#s1:hover{
+			cursor: pointer;
+		}
+		#s2:hover{
+			cursor: pointer;
+		}
+		#s2:hover #i2{
+			opacity: 1;
+		}
+		#s3:hover{
+			cursor: pointer;
+		}
+		#s3:hover #i3{
+			opacity: 1;
+		}
+		#s4:hover{
+			cursor: pointer;
+		}
+		#s4:hover #i4{
+			opacity: 1;
+		}
+		#s5:hover{
+			cursor: pointer;
+		}
+		#s5:hover #i5{
+			opacity: 1;
+		}
+		#s6:hover{
+			cursor: pointer;
+		}
+		#s6:hover #i6{
+			opacity: 1;
+		}
+		#s7:hover{
+			cursor: pointer;
+		}
+		#s7:hover #i7{
+			opacity: 1;
+		}
+		#s8:hover{
+			cursor: pointer;
+		}
+		#s8:hover #i8{
+			opacity: 1;
+		}
+		#i1{
+			position: relative;
+			height: 25px;
+			width: 130px;
+			border:0px solid#002;
+			opacity: 0;
+
+		}
+		#i2{
+			position: relative;
+			height: 25px;
+			width: 130px;
+			border:0px solid#002;
+			opacity: 0;
+		}
+		#i3{
+			position: relative;
+			height: 25px;
+			width: 130px;
+			border:0px solid#002;
+			opacity: 0;
+		}
+		#i4{
+			position: relative;
+			height: 25px;
+			width: 130px;
+			border:0px solid#002;
+			opacity: 0;
+		}
+		#i5{
+			position: relative;
+			height: 25px;
+			width: 130px;
+			border:0px solid#002;
+			opacity: 0;
+		}
+		#i6{
+			position: relative;
+			height: 25px;
+			width: 130px;
+			border:0px solid#002;
+			opacity: 0;
+		}
+		#i7{
+			position: relative;
+			height: 25px;
+			width: 130px;
+			border:0px solid#002;
+			opacity: 0;
+		}
+		#i8{
+			position: relative;
+			height: 25px;
+			width: 130px;
+			border:0px solid#002;
+			opacity: 0;
+		}
+		#img2{
+			height: 28px;
+			width: 30px;
+		}
+		#img2:hover{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+		<div class="as1">
+			<h1 style="position: absolute;left: 2px;top: -17px;">精选歌曲</h1>
+			<img id="img1" src="images/流行音乐.png" style="top: 55px;">
+			<p id="a1z">流行音乐</p>
+			<img src="images/儿歌.png" alt="" id="img1" style="top: 8px;">
+			<p id="a1z" style="top: -48px;">儿歌</p>
+			<img src="images/小清新.png" style="top: -32px;" alt="" id="img1"> 
+			<p id="a1z" style="top: -86px;">小清新歌曲</p>
+			<img src="images/火.png" alt="" id="img1" style="top: -70px;">
+			<p id="a1z" style="top: -127px;">爱情歌曲</p>
+			<img src="images/摇滚.png" alt="" style="top: -110px;" id="img1">
+			<p id="a1z" style="top: -166px;">摇滚乐</p>
+			<img src="images/民族.png" id="img1" style="top: -150px;">
+			<p id="a1z" style="top: -205px;" >民族乐</p>
+		</div>
+		<div class="as3">
+			<img src="images/播放.png" id="img1">
+			<p style="position:relative;top: -56px;left: 35px;font-size: 20px;">播放全部</p>
+		</div>
+		<div class="as2">
+			<table border="0">
+				<tr class="ts">
+					<td id="song">歌曲</td>
+					<td id="tb">歌手</td>
+					<td id="tb" style="left: 220px;">时长</td>
+				</tr>
+			</table>
+			<ol>
+				<li id="s1">
+					<p id="">哑巴</p>
+					<div id="i1" style="left: 51px;top: -40px;">
+						<a href="music.html"><img id="img2" src="images/播放.png" alt="" style="position: relative;left: 1px;top:-2px;"></a>
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/下载.png" alt="">
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/分 享.png" alt="">
+						<img id="img2"  style="position: relative;left: 100px;top:-34px;" src="images/添加.png" alt="">
+					</div>
+					<p style="position: absolute;left: 284px;top: -24px;">薛之谦</p>
+					<p style="position: relative;left: 429px;top: -88px;">3:26</p>
+				</li>
+				<li id="s2" style="position:relative;top: -40px">
+					<p style="position: relative;">青花瓷</p>
+					<div id="i2" style="left: 51px;top: -40px;">
+						<a href="music2.html"><img id="img2" src="images/播放.png" alt="" style="position: relative;left: 1px;top:-2px;"></a>
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/下载.png" alt="">
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/分 享.png" alt="">
+						<img id="img2"  style="position: relative;left: 100px;top:-34px;" src="images/添加.png" alt="">
+					</div>
+					<p style="position: relative;left: 286px;top: -80px;">周杰伦</p>
+					<p style="position: relative;left: 429px;top: -116px;">4:32</p>
+				</li>
+				<li id="s3">
+					<p style="position: relative;">多嘴</p>
+					<div id="i3" style="left: 51px;top: -40px;">
+						<a href=""><img id="img2" src="images/播放.png" alt="" style="position: relative;left: 1px;top:-2px;"></a>
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/下载.png" alt="">
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/分 享.png" alt="">
+						<img id="img2"  style="position: relative;left: 100px;top:-34px;" src="images/添加.png" alt="">
+					</div>
+					<p style="position: relative;left: 286px;top: -80px;">陈鸿宇</p>
+					<p style="position: relative;left: 429px;top: -116px;">3:42</p>
+				</li>
+				<li id="s4">
+					<p style="position: relative;">声声慢</p>
+					<div id="i4" style="left: 51px;top: -40px;">
+						<a href=""><img id="img2" src="images/播放.png" alt="" style="position: relative;left: 1px;top:-2px;"></a>
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/下载.png" alt="">
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/分 享.png" alt="">
+						<img id="img2"  style="position: relative;left: 100px;top:-34px;" src="images/添加.png" alt="">
+					</div>
+					<p style="position: relative;left: 286px;top: -80px;">崔开潮</p>
+					<p style="position: relative;left: 429px;top: -116px;">3:51</p>
+				</li>
+				<li id="s5">
+					<p style="position: relative;">革命</p>
+					<div id="i5" style="left: 51px;top: -40px;">
+						<a href=""><img id="img2" src="images/播放.png" alt="" style="position: relative;left: 1px;top:-2px;"></a>
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/下载.png" alt="">
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/分 享.png" alt="">
+						<img id="img2"  style="position: relative;left: 100px;top:-34px;" src="images/添加.png" alt="">
+					</div>
+					<p style="position: relative;left: 286px;top: -80px;">Conny Berghall</p>
+					<p style="position: relative;left: 429px;top: -116px;">4:35</p>
+				</li>
+				<li id="s6">
+					<p style="position: relative;">忆</p>
+					<div id="i6" style="left: 51px;top: -40px;">
+						<a href=""><img id="img2" src="images/播放.png" alt="" style="position: relative;left: 1px;top:-2px;"></a>
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/下载.png" alt="">
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/分 享.png" alt="">
+						<img id="img2"  style="position: relative;left: 100px;top:-34px;" src="images/添加.png" alt="">
+					</div>
+					<p style="position: relative;left: 286px;top: -80px;">陈亮</p>
+					<p style="position: relative;left: 429px;top: -116px;">3:18</p>
+				</li>
+				<li id="s7">
+					<p style="position: relative;">女儿情</p>
+					<div id="i7" style="left: 51px;top: -40px;">
+						<a href=""><img id="img2" src="images/播放.png" alt="" style="position: relative;left: 1px;top:-2px;"></a>
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/下载.png" alt="">
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/分 享.png" alt="">
+						<img id="img2"  style="position: relative;left: 100px;top:-34px;" src="images/添加.png" alt="">
+					</div>
+					<p style="position: relative;left: 286px;top: -80px;">万晓利</p>
+					<p style="position: relative;left: 429px;top: -116px;">4:52</p>
+				</li>
+				<li id="s8">
+					<p style="position: relative;">新年好</p>
+					<div id="i8" style="left: 51px;top: -40px;">
+						<a href=""><img id="img2" src="images/播放.png" alt="" style="position: relative;left: 1px;top:-2px;"></a>
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/下载.png" alt="">
+						<img id="img2"  style="position: relative;left: 1px;top:-2px;" src="images/分 享.png" alt="">
+						<img id="img2"  style="position: relative;left: 100px;top:-34px;" src="images/添加.png" alt="">
+					</div>
+					<p style="position: relative;left: 286px;top: -80px;">安子与九妹</p>
+					<p style="position: relative;left: 429px;top: -116px;">4:26</p>
+				</li>
+			</ol>
+			<a href="" style="position: relative;left: 150px;top: -770px;"><上一页</a>
+			<a href="" style="position: relative;left: 300px;top: -770px;">下一页></a>
+		</div>
+	</div>
+</body>
+</html>

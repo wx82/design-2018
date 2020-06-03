@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>万千歌手，尽在眼前~</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<style type="text/css">
+
+		* {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        body{
+        	background-image: url(images/背景改.png);
+        	background-size: cover;
+        }
+        .order {  
+	   height: 60px;  
+	   line-height: 60px;  
+	   text-align: center;
+	   position: relative;
+	   top:10px;  
+		}  
+        .order .line {  
+	   display: inline-block;  
+	   width: 400px;  
+	   border-top: 3px solid #ccc ;  
+		}  
+		.order .txt {  
+		font-family: "微软雅黑";
+		font-size: 60px;
+	   color: #686868;  
+	   vertical-align: middle;  
+	   } 
+
+		#box{position: relative;margin:50px auto; width: 1350px;height: 800px;}
+		ul li{float: left;list-style: none;position: relative;width: 150px;height: 30px;text-align: center;cursor:pointer;}
+		ul li:hover{background: grey;}
+		.con{position: absolute;width: 1350px;height: 770px;top: 30px;}
+
+		.Img11{
+			position: relative;
+			top:80px;
+			left: 50px;
+		}
+		.Img12{
+			position: relative;
+			top: 80px;
+			left: 220px;
+		}
+		.Img13{
+			position: relative;
+			top: 80px;
+			left: 420px;
+		}
+		.Img14{
+			position: relative;
+			top:80px;
+			left: 620px;
+		}
+		.Img21{
+			position: relative;
+			top: 230px;
+			left: 50px;
+		}
+		.Img22{
+			position: relative;
+			top: 230px;
+			left: 220px;
+		}
+		.Img23{
+			position: relative;
+			top:230px;
+			left: 420px;
+		}
+		.Img24{
+			position: relative;
+			top: 230px;
+			left: 620px; 
+		}
+		.con img:hover{
+			transform: scale(1.05,1.05);
+            cursor: pointer;
+		}
+		#leader{
+            height: 40px;
+            width: 100%;
+            background-color: #300;
+
+        }
+        #leader img{
+            position: absolute;
+            left: 90px;
+            height: 40px;
+            width: 50px;
+            transform: rotate(-20deg);
+        }
+        #span1{
+            position: relative;
+            left: 170px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+            font-family: "MicrosoftJhengHei"；
+        }
+        #span2{
+            position: relative;
+            left: 370px;
+            top: 9px;
+            font-size: 18px;
+            color: white;
+        }
+        #span3{
+            position: relative;
+            left: 520px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+        #span4{
+            position: relative;
+            left: 670px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+        #span5{
+            position: relative;
+            left: 820px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+        #span6{
+            position: relative;
+            left: 1120px;
+            top: 9px;
+            color: white; 
+            font-size: 14px;
+        }
+        #span7{
+            position: relative;
+            left: 1160px;
+            top: 9px;
+            color: white; 
+            font-size: 14px;
+        }
+        #span8{
+        	position: relative;
+            left: 960px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+		#leader span:hover{
+            background-color: #0c3; cursor: pointer;
+        }
+        #lii li{
+        	font-family: "微软雅黑";
+        	font-size: 18px;
+        }
+        #leader a{
+        	color: white;
+        }
+	</style>
+
+
+	<script type="text/javascript">
+		$(function(){
+
+			$("#box div ul li").hover(function() {
+				var index = $(this).index();
+				$(".con").eq(index).css({'z-index':'99'}).siblings('.con').css({'z-index':'1'});
+				
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="leader">
+        <img src="images/摇滚手势.png" >
+        <span id="span1">你的月亮我的心</span>
+        <span id="span2"><a href="index.html">首页</a></span>
+        <span id="span3"><a href="singer.html">歌手</a></span>
+        <span id="span4"><a href="allsong.html">歌曲</a></span>
+        <span id="span5"><a href="top.html">榜单</a></span>
+        <span id="span8"><a href="demo.html">分类</a></span>
+        <a href="1.html"><span id="span6">登录</span></a>
+        <a href="register.html"><span id="span7">注册</span></a>
+    </div>
+	<div class="order">  
+	   <span style="white-space:pre">   </span><span class="line"></span>  
+	   <span style="white-space:pre">   </span><span class="txt"><strong>万千歌手</strong>   &nbsp;尽在眼前</span>  
+	   <span style="white-space:pre">   </span><span class="line"></span>  
+	</div> 
+	
+		<div id="box">
+		<div id="lii">
+			<ul>
+				<li>华语男</li>
+				<li>华语女</li>
+				<li>华语组合</li>
+				<li>韩国男</li>
+				<li>韩国女</li>
+				<li>韩国组合</li>
+				<li>欧美男</li>
+				<li>欧美女</li>
+				<li>欧美组合</li>
+			</ul>
+			<div class="con" style=" z-index: 1;">
+				<a href="introduce.html"><img src="歌手/薛之谦.jpg" class="Img11" style="height: 200px;width: 170px;"></a>
+				<a href="music2.html"><img src="歌手/周杰伦640px.jpg"  class="Img12" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/陈奕迅.jpg" alt="" class="Img13" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/林俊杰.jpg" alt="" class="Img14" style="height: 200px;width: 170px;" ></a>
+				<br>
+				<a href=""><img src="歌手/华晨宇.jpg" alt="" class="Img21" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/张杰.jpg" alt="" class="Img22" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/李玉刚.jpg" alt="" class="Img23" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/汪峰.jpg" alt="" class="Img24" style="height: 200px;width: 170px;"></a>
+			</div>
+			<div class="con" >
+				<a href=""><img src="歌手/于文文.jpg" class="Img11" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/刘若英.jpg"  class="Img12" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/庄心妍.jpg" alt="" class="Img13" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/张碧晨.jpg" alt="" class="Img14" style="height: 200px;width: 170px;" ></a>
+				<br>
+				<a href=""><img src="歌手/张靓颖.jpg" alt="" class="Img21" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/邓紫棋.jpg" alt="" class="Img22" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/张韶涵.jpg" alt="" class="Img23" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/王菲.jpg" alt="" class="Img24" style="height: 200px;width: 170px;"></a>		
+			</div>
+			<div class="con" >
+				<a href=""><img src="歌手/南.jpg" class="Img11" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/牛奶咖啡.jpg"  class="Img12" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/好妹妹.jpg" alt="" class="Img13" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/筷子.jpg" alt="" class="Img14" style="height: 200px;width: 170px;" ></a>
+				<br>
+				<a href=""><img src="歌手/苏打绿.jpg" alt="" class="Img21" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/tf.jpg" alt="" class="Img22" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/凤凰传奇.jpg" alt="" class="Img23" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/beyond.jpg" alt="" class="Img24" style="height: 200px;width: 170px;"></a>	
+			</div>
+			<div class="con" >
+				<a href=""><img src="歌手/韩男1.jpg" class="Img11" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩男2.jpeg"  class="Img12" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩男3.jpeg" alt="" class="Img13" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩男4.jpg" alt="" class="Img14" style="height: 200px;width: 170px;" ></a>
+				<br>
+				<a href=""><img src="歌手/韩男5.jpg" alt="" class="Img21" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩男6.jpg" alt="" class="Img22" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩男7.jpg" alt="" class="Img23" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩男8.jpg" alt="" class="Img24" style="height: 200px;width: 170px;"></a>
+			</div>
+			<div class="con">
+				<a href=""><img src="歌手/韩女1.jpg" class="Img11" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩女2.jpg"  class="Img12" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩女3.jpg" alt="" class="Img13" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩女4.jpg" alt="" class="Img14" style="height: 200px;width: 170px;" ></a>
+				<br>
+				<a href=""><img src="歌手/韩女5.jpg" alt="" class="Img21" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩女6.jpg" alt="" class="Img22" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩女7.jpg" alt="" class="Img23" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩女8.jpg" alt="" class="Img24" style="height: 200px;width: 170px;"></a>
+			</div>
+			<div class="con">
+				<a href=""><img src="歌手/汉族1.jpg" class="Img11" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/汉族2.jpg"  class="Img12" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/汉族3.jpg" alt="" class="Img13" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/汉族4.jpg" alt="" class="Img14" style="height: 200px;width: 170px;" ></a>
+				<br>
+				<a href=""><img src="歌手/汉族5.jpg" alt="" class="Img21" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/汉族6.jpg" alt="" class="Img22" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/汉族7.jpg" alt="" class="Img23" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/汉族8.jpg" alt="" class="Img24" style="height: 200px;width: 170px;"></a>
+			</div>
+			<div class="con">
+				<a href=""><img src="歌手/欧男1.jpg" class="Img11" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧男2.jpg"  class="Img12" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧男3.jpg" alt="" class="Img13" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧男4.jpg" alt="" class="Img14" style="height: 200px;width: 170px;" ></a>
+				<br>
+				<a href=""><img src="歌手/欧男5.jpg" alt="" class="Img21" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧男6.jpg" alt="" class="Img22" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧男7.jpg" alt="" class="Img23" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/韩男1.jpg" alt="" class="Img24" style="height: 200px;width: 170px;"></a>
+			</div>
+			<div class="con">
+				<a href=""><img src="歌手/欧女1.jpg" class="Img11" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧女2.jpg"  class="Img12" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧女3.jpg" alt="" class="Img13" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧女4.jpg" alt="" class="Img14" style="height: 200px;width: 170px;" ></a>
+				<br>
+				<a href=""><img src="歌手/欧女5.jpg" alt="" class="Img21" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧女6.jpg" alt="" class="Img22" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧女7.jpg" alt="" class="Img23" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧女8.jpg" alt="" class="Img24" style="height: 200px;width: 170px;"></a>
+			</div>
+			
+			<div class="con">
+				<a href=""><img src="歌手/欧组1.jpg" class="Img11" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧组2.jpg"  class="Img12" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧组3.jpg" alt="" class="Img13" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧组4.jpg" alt="" class="Img14" style="height: 200px;width: 170px;" ></a>
+				<br>
+				<a href=""><img src="歌手/欧组5.jpg" alt="" class="Img21" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧组6.jpg" alt="" class="Img22" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧组7.jpg" alt="" class="Img23" style="height: 200px;width: 170px;"></a>
+				<a href=""><img src="歌手/欧组8.jpg" alt="" class="Img24" style="height: 200px;width: 170px;"></a>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

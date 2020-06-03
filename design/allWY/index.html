@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到你的月亮我的心~</title>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        #leader{
+            height: 40px;
+            width: 100%;
+            background-color: #300;
+
+        }
+        #leader img{
+            position: absolute;
+            left: 90px;
+            height: 40px;
+            width: 50px;
+            transform: rotate(-20deg);
+        }
+        #span1{
+            position: relative;
+            left: 170px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+            font-family: "MicrosoftJhengHei"；
+        }
+        #span2{
+            position: relative;
+            left: 370px;
+            top: 9px;
+            font-size: 18px;
+            color: white;
+        }
+        #span3{
+            position: relative;
+            left: 520px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+        #span4{
+            position: relative;
+            left: 670px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+        #span5{
+            position: relative;
+            left: 820px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+        #span6{
+            position: relative;
+            left: 1120px;
+            top: 9px;
+            color: white; 
+            font-size: 14px;
+        }
+        #span7{
+            position: relative;
+            left: 1160px;
+            top: 9px;
+            color: white; 
+            font-size: 14px;
+        }
+        #span8{
+            position: relative;
+            left: 960px;
+            top: 9px;
+            color: white; 
+            font-size: 18px;
+        }
+        #container {
+            position: relative;
+            margin: 23.2px auto;
+            width: 1400px;
+            height: 500px;
+            border: 1px solid #333;
+            overflow: hidden;
+
+        }
+        
+        #list {
+            position: absolute;
+            z-index: 1;
+            width: 8400px;
+            height: 500px;
+        }
+        
+        #list img {
+            float: left;
+            width: 100%;
+            height: 500px;
+        }
+        
+        #buttons {
+            position: absolute;
+            left: 650px;
+            bottom: 20px;
+            z-index: 2;
+            height: 10px;
+            width: 100px;
+        }
+        
+        #buttons span {
+            float: left;
+            margin-right: 5px;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background: #333;
+            cursor: pointer;
+        }
+        
+        #buttons .on {
+            background: orangered;
+        }
+        
+        .arrow {
+            position: absolute;
+            top: 180px;
+            z-index: 2;
+            display: none;
+            width: 40px;
+            height: 40px;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 39px;
+            text-align: center;
+            color: #fff;
+            background-color: RGBA(0, 0, 0, .3);
+            cursor: pointer;
+        }
+        
+        .arrow:hover {
+            background-color: RGBA(0, 0, 0, .7);
+        }
+        
+        #container:hover .arrow {
+            display: block;
+        }
+        
+        #prev {
+            left: 20px;
+        }
+        
+        #next {
+            right: 20px;
+        }
+        #leader span:hover{
+            background-color: #0c3; cursor: pointer;
+        }
+        .order {  
+       height: 60px;  
+       line-height: 60px;  
+       text-align: center;  
+        }  
+        .order .line {  
+       display: inline-block;  
+       width: 350px;  
+       border-top: 1px solid #ccc ;  
+        }  
+        .order .txt {  
+        font-family: "微软雅黑";
+        font-size: 30px;
+       color: #686868;  
+       vertical-align: middle;  
+        } 
+        #singer{
+            height: 210px;
+            width: 1400px; 
+            margin: 60px auto;
+        }
+        #song{
+            height: 300px;
+            width: 1400px;
+            margin: 60px auto;
+        }
+        #songName{
+            position: relative;
+            top: 10px;
+        }
+        .name{
+            font-family: "微软雅黑";
+        }
+        .singerImg , .songImg{
+            height: 200px;width: 170px;
+
+        }
+        #Img1 {
+            position: relative;
+            left: 140px;
+        }
+        #Img5{
+            position: relative;
+            left: 140px;
+        }
+        #name1{
+            position: relative;
+            left: 190px;
+        }
+        #Img2{
+            position: relative;
+            left: 280px;
+        }
+        #Img6{
+            position: relative;
+            left: 280px;
+        }
+        #name2{
+            position: relative;
+            left: 430px;
+        }
+        #Img3{
+            position: relative;
+            left: 420px;
+        }
+        #Img7{
+            position: relative;
+            left: 420px;
+        }
+        #name3{
+            position: relative;
+            left: 650px;
+        }
+        #Img4{
+            position: relative;
+            left: 560px;
+        }
+        #Img8{
+            position: relative;
+            left: 560px;
+        }
+        #name4{
+            position: relative;
+            left: 890px;
+        }
+        .singerImg:hover{
+            transform: scale(1.05,1.05);
+            opacity: 0.5;
+        }
+        .songImg:hover{
+            transform: scale(1.05,1.05);
+            opacity: 0.5;
+        }
+        #leader a{
+            color: white;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+
+        window.onload = function() {
+            var container = document.getElementById('container');
+            var list = document.getElementById('list');
+            var buttons = document.getElementById('buttons').getElementsByTagName('span');
+            var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+            var index = 1;
+            var timer;
+
+            function animate(offset) {
+                var newLeft = parseInt(list.style.left) + offset;
+                list.style.left = newLeft + 'px';
+                if (newLeft > -1400) {
+                    list.style.left = -7000 + 'px';
+                }
+                if (newLeft < -7000) {
+                    list.style.left = -1400 + 'px';
+                }
+            }
+
+            function play() {
+                timer = setInterval(function() {
+                    next.onclick();
+                }, 3000)
+            }
+
+            function stop() {
+                clearInterval(timer);
+            }
+
+            function buttonsShow() {
+                for (var i = 0; i < buttons.length; i++) {
+                    if (buttons[i].className == "on") {
+                        buttons[i].className = "";
+                    }
+                }
+
+                buttons[index - 1].className = "on";
+            }
+
+            prev.onclick = function() {
+                index -= 1;
+                if (index < 1) {
+                    index = 5
+                }
+                buttonsShow();
+                animate(1400);
+            };
+
+            next.onclick = function() {
+                index += 1;
+                if (index > 5) {
+                    index = 1
+                }
+                animate(-1400);
+                buttonsShow();
+            };
+
+            for (var i = 0; i < buttons.length; i++) {
+                (function(i) {
+                    buttons[i].onclick = function() {
+                        var clickIndex = parseInt(this.getAttribute('index'));
+                        var offset = 1400 * (index - clickIndex); 
+                        animate(offset);
+                        index = clickIndex; 
+                        buttonsShow();
+                    }
+                })(i)
+            }
+
+            container.onmouseover = stop;
+            container.onmouseout = play;
+            play();
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="leader">
+        <img src="images/摇滚手势.png" >
+        <span id="span1">你的月亮我的心</span>
+        <span id="span2"><a href="index.html">首页</a></span>
+        <span id="span3"><a href="singer.html">歌手</a></span>
+        <span id="span4"><a href="allsong.html">歌曲</a></span>
+        <span id="span5"><a href="top.html">榜单</a></span>
+        <span id="span8"><a href="demo.html">分类</a></span>
+        <a href="1.html"><span id="span6">登录</span></a>
+        <a href="register.html"><span id="span7">注册</span></a>
+    </div>
+    <div id="container">
+        <div id="list" style="left: -1400px;">
+            <img src="images/导5.png" alt="1" style="width: 1400px;height: 500px;" />
+            <img src="images/导5.png" alt="1" style="width: 1400px;height: 500px;" />
+            <img src="images/导3..png" alt="2" style="width: 1400px;height: 500px;" />
+            <img src="images/导4.png" alt="3" style="width: 1400px;height: 500px;" />
+            <img src="images/导2.png" alt="4" style="width: 1400px;height: 500px;" />
+            <img src="images/导1.png" alt="5" style="width: 1400px;height: 500px;" />
+            <img src="images/导1.png" alt="5" style="width: 1400px;height: 500px;" />
+        </div>
+        <div id="buttons">
+            <span index="1" class="on"></span>
+            <span index="2"></span>
+            <span index="3"></span>
+            <span index="4"></span>
+            <span index="5"></span>
+        </div>
+        <a href="javascript:;" id="prev" class="arrow"><</a>
+        <a href="javascript:;" id="next" class="arrow">></a>
+    </div>
+    <div class="order">  
+       <span style="white-space:pre">   </span><span class="line"></span>  
+       <span style="white-space:pre">   </span><span class="txt"><strong>歌手</strong>  推荐</span>  
+       <span style="white-space:pre">   </span><span class="line"></span>  
+    </div> 
+    <div id="singer">
+        <a href="introduce.html"><img src="歌手/薛之谦.jpg" alt="" id="Img1" class="singerImg"></a>
+        <a href=""><img src="歌手/凤凰传奇.jpg" alt="" id="Img2" class="singerImg"></a>
+        <a href=""><img src="歌手/那英.jpg" alt="" id="Img3" class="singerImg"></a>
+        <a href=""><img src="歌手/周杰伦640px.jpg" alt="" id="Img4" class="singerImg"></a>
+    </div>
+    <div class="order">  
+       <span style="white-space:pre">   </span><span class="line"></span>  
+       <span style="white-space:pre">   </span><span class="txt"><strong>新歌</strong>  首发</span>  
+       <span style="white-space:pre">   </span><span class="line"></span>  
+    </div> 
+
+    <div id="song">
+            <a href=""><img src="images/离人.png" id="Img5" class="songImg"></a>
+            <a href=""><img src="images/3.png" id="Img6" class="songImg"></a>
+            <a href=""><img src="images/4.png" id="Img7" class="songImg"></a>
+            <a href=""><img src="images/新歌.png" id="Img8" class="songImg"></a><br>
+            <span id="songName">
+                <span id="name1" class="name">离人愁</span>
+                <span id="name2" class="name">总有个人先走散</span>
+                <span id="name3" class="name">慢慢喜欢你</span>
+                <span id="name4" class="name">肆无忌惮</span>
+            </span>
+    </div>
+    <div style="text-align:center;clear:both;">
+        <script src="js/jquery-ui-1.8.21.custom.min.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+
+        </div>
+
+        <div class="example">
+            <div class="player">
+                <div class="pl"></div>
+                <div class="title"></div>
+                <div class="artist"></div>
+                <div class="cover"></div>
+                <div class="controls">
+                    <div class="play"></div>
+                    <div class="pause"></div>
+                    <div class="rew"></div>
+                    <div class="fwd"></div>
+                </div>
+                <div class="volume"></div>
+                <div class="tracker"></div>
+            </div>
+            <ul class="playlist hidden">                
+                <li audiourl="music/薛之谦 - 哑巴.mp3" cover="images/bd38efcc0e39237e02e6981c5b50b213_181421frrgq3rl3b3yb020.jpg" artist="薛之谦">哑巴.mp3</li>
+                <li audiourl="music/李袁杰 - 离人愁.mp3" cover="images/1EAV2TRO0NJ]P}7H90ORYV5.png" artist="李袁杰">离人愁.mp3</li>
+                <li audiourl="music/周杰伦 - 青花瓷.mp3" cover="images/周杰伦.png" artist="周杰伦">青花瓷.mp3</li>
+            </ul>
+
+        </div>
+        <div style="text-align:center;clear:both;">
+            <script src="/gg_bd_ad_720x90-2.js" type="text/javascript"></script>
+
+        </div>
+</body>
+
+</html>

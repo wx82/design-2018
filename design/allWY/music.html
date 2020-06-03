@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>哑巴-薛之谦</title>
+	<link rel="stylesheet" href="css/music.css">
+	<style type="text/css">
+		body{
+			background-image: url(images/006.jpg);
+			background-size: cover;
+		}
+		.words{
+			font-family: "微软雅黑";
+			font-size: 20px;
+		}
+		.words:hover{
+			color: red;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<audio id="audio" src="music/薛之谦 - 哑巴.mp3" preload>
+	 对不起，您的浏览器不支持HTML5音频播放。
+	 </audio>
+	 <div id="CDimage">
+	 <img src="images/bd38efcc0e39237e02e6981c5b50b213_181421frrgq3rl3b3yb020.jpg" style="height: 300px; width: 300px;" />
+	 </div>
+
+	 <div>
+	 <input id="volume" type="range" min="0" max="1" step="0.1"onchange="setVolume()"/>
+	 </div>
+
+	 <div>
+	 当前正在播放：<span id="title">哑巴 - 薛之谦</span>
+	 <div/>
+
+	 <div>
+	 <button id="toggleBtn" onclick="toggleMusic()"><img src="images/play.png" width="50" height="50" />
+	 </button>
+	 </div>
+	 <div>
+	 	<span class="words">那时我们光着脚丫</span><br>
+		<span class="words">数鞋里的沙</span><br>
+		<span class="words">阳光照着你的脸颊</span><br>
+		<span class="words">海浪都不怕</span><br>
+		<span class="words">你的情话你的谎话</span><br>
+		<span class="words">通通都记下</span><br>
+		<span class="words">可那次直到雨点落下</span><br>
+		<span class="words">你才肯说句话</span><br>
+		<span class="words">一点一点一点退潮不见</span><br>
+		<span class="words">一年一年一年你的欺骗</span><br>
+		<span class="words">一遍一遍一遍又一遍的埋怨</span><br>
+		<span class="words">我就像一个傻 瓜一样</span><br>
+		<span class="words">给不了你最想要的幻想</span><br>
+		<span class="words">付出了我全部的力量</span><br>
+		<span class="words">然后再放任你去流浪</span><br>
+		<span class="words">我就像一个哑巴逞强</span><br>
+		<span class="words">明明痛却不出任何声响</span><br>
+		<span class="words">不用道歉因为哑巴</span><br>
+		<span class="words">不会受伤</span><br>
+		<span class="words">那时我们光着脚丫</span><br>
+		<span class="words">数鞋里的沙</span><br>
+		<span class="words">阳光照着你的脸颊</span><br>
+		<span class="words">海浪都不怕</span><br>
+		<span class="words">你的情话你的谎话</span><br>
+		<span class="words">通通都记下</span><br>
+		<span class="words">可那次直到雨点落下</span><br>
+		<span class="words">你才肯说句话</span><br>
+		<span class="words">一点一点一点退潮不见</span><br>
+		<span class="words">一年一年一年你的欺骗</span><br>
+		<span class="words">一遍一遍一遍又一遍的埋怨</span><br>
+		<span class="words">我就像一个傻瓜一样</span><br>
+		<span class="words">给不了你最想要的幻想</span><br>
+		<span class="words">付出了我全部的力量</span><br>
+		<span class="words">然后再放任你去流浪</span><br>
+		<span class="words">我就像一个哑巴逞强</span><br>
+		<span class="words">明明痛却不出任何声响</span><br>
+		<span class="words">不用道歉因为哑巴</span><br>
+		<span class="words">不会受伤</span><br>
+		<span class="words">爱情里的傻瓜都一样</span><br>
+		<span class="words">沉浸在不切实际的幻想</span><br>
+		<span class="words">贪恋着你全部的温柔</span><br>
+		<span class="words">听信着你编织的借口</span><br>
+		<span class="words">我就像一个哑巴逞强</span><br>
+		<span class="words">明明痛却不出任何声响</span><br>
+		<span class="words">不用道歉因为哑巴</span><br>
+		<span class="words">不会受伤</span><br>
+	 </div>
+	 <script>
+	 var music = document.getElementById("audio");
+
+	 var volume = document.getElementById("volume");
+
+	 var toggleBtn = document.getElementById("toggleBtn");
+	 var title = document.getElementById("title");
+	 
+	 function toggleMusic(){
+	 	if (music.paused) {
+	 		music.play();
+
+	 		toggleBtn.innerHTML='<img src="images/pause.png" width="50" height="50"/>';
+	 	} else{
+	 		music.pause();
+
+	 		toggleBtn.innerHTML='<img src="images/play.png" width="50" height="50"/>';
+	 	}
+	 }
+
+	 function setVolume(){
+	 	music.volume = volme.value;
+	 }
+	 </script>
+	
+</html>
